@@ -1,0 +1,55 @@
+/*----------------------
+  TABLE OF CSS CONTENT
+------------------------
+	[*] Reset
+  [2] Table
+*/
+/* ------------------
+[*] Reset
+-------------------*/
+@import url("reset.css");
+/* ------------------
+[1] Global style
+-------------------*/
+/*html { direction: rtl; }*/
+body { background-color: #fff; }
+
+/* ------------------
+[2] Table
+-------------------*/
+.tableWrapper { max-width: 850px; margin: 0 auto; }
+
+.tableWrapper h1 { font-size: 30px; font-weight: bold; padding: 27px 0 33px; border-top: solid 5px #5596ff; margin-top: 20px; width: 96%; margin: 0 auto; }
+
+table { width: 100%; }
+
+tr.tableHeader { height: auto; margin: 0; padding: 5px 0; display: block; background-color: #fff; }
+
+tr.tableHeader th { width: 1%; }
+
+table tr { background-color: #f3f7fc; position: relative; display: table; height: 123px; float: left; width: 100%; margin-bottom: 10px; }
+
+table tr td { box-sizing: border-box; width: 25%; display: table-cell; vertical-align: middle; text-align: center; }
+
+table tr td:nth-child(3) { color: #5596ff; font-size: 26px; padding: 0 6%; font-weight: bold; }
+
+table tr td img { width: 100%; display: block; max-width: 200px; margin: 0 auto; }
+
+table tr td a { background-color: #003cff; color: #fff; padding: 10px 0; text-decoration: none; font-weight: bold; width: 90%; display: block; margin: 0 auto; }
+
+td#randomRegNum span { background-color: #fdde87; padding: 4px; margin-right: 3px; border-radius: 20px; width: 17px; height: 17px; display: inline-block; line-height: 17px; font-size: 13px; }
+
+td#randomRegNum span.strong { background-color: #e2605e; color: #fff; }
+
+/* ------------------
+[*] Media query
+-------------------*/
+@media screen and (max-width: 640px) { tr.tableHeader { display: none; }
+  table tr td { width: 33.33%; }
+  table tr td:nth-child(2) { position: absolute; bottom: 5%; width: 100%; text-align: center; left: 0; }
+  table tr td img { max-width: 100px; } }
+
+@media screen and (max-width: 375px) { table tr td a { font-size: 15px; }
+  table tr td:nth-child(3) { font-size: 21px; } }
+
+/*# sourceMappingURL=style.css.map */
